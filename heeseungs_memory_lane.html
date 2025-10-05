@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heeseung's Memory Lane</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --ivory: #fffaf3;
+            --ivory-2: #fff7ef;
+            --purple: #8a6bbf;
+            --purple-soft: #d9cbea;
+            --muted: #6b5f6f;
+            --card-radius: 18px;
+            --gap: 24px;
+            --shadow: 0 12px 30px rgba(24, 12, 40, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Quicksand', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(180deg, var(--ivory-2), var(--ivory));
+            color: #2b2830;
+            min-height: 100vh;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 20px 40px;
+            background: linear-gradient(180deg, rgba(138, 107, 191, 0.08), rgba(255, 255, 255, 0.0));
+            position: relative;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            color: var(--purple);
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .header p {
+            color: var(--muted);
+            font-size: 16px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: var(--purple);
+            margin-top: 8px;
+            font-weight: 600;
+        }
+
+        .gallery-container {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 30px 20px 20px;
+        }
+
+        .memory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px 0 80px;
+        }
+
+        .memory-card {
+            background: var(--ivory);
+            border-radius: var(--card-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            border: 1px solid rgba(138, 107, 191, 0.1);
+        }
+
+        .memory-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(24, 12, 40, 0.15);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .card-content {
+            padding: 24px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .username {
+            font-weight: 600;
+            color: var(--purple);
+            margin-bottom: 8px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .country {
+            font-size: 12px;
+            color: var(--muted);
+            background: var(--purple-soft);
+            padding: 2px 8px;
+            border-radius: 12px;
+        }
+
+        .message {
+            color: #3a3340;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+
+        .heart {
+            color: #ff6b9d;
+            font-size: 16px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--muted);
+            font-size: 15px;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            margin-top: 40px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .memory-grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Whispers Across the World</h1>
+        <p>Messages and moments from ENGENEs across the globe, celebrating our precious Heeseung</p>
+        <div class="subtitle">"You are our melody, our light, our everything"</div>
+    </div>
+
+    <div class="gallery-container">
+
+        <div class="memory-grid">
+            <!-- Message 1 -->
+            <div class="memory-card">
+                <img src="https://i.pinimg.com/1200x/e1/33/95/e133955af9ffcdc3db0534f757288536.jpg"
+                    alt="Heeseung I-LAND" class="card-image">
+                <div class="card-content">
+                    <div class="username">
+                        @heeseung_ace <span class="country">KOREA</span>
+                    </div>
+                    <div class="message">
+                        Watching you on I-LAND made me believe in dreams again. Your passion and talent are incredible!
+                        <span class="heart">💜</span> Keep shining our ACE!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Message 2 -->
+            <div class="memory-card">
+                <img src="https://i.pinimg.com/736x/75/e1/32/75e13230e7fab855cd012552116ab58c.jpg" alt="Heeseung Final"
+                    class="card-image">
+                <div class="card-content">
+                    <div class="username">
+                        @forever_heeseung <span class="country">JAPAN</span>
+                    </div>
+                    <div class="message">
+                        .............<span class="heart">🎉</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Message 3 -->
+            <div class="memory-card">
+                <img src="https://i.pinimg.com/1200x/28/00/97/280097d4b847499a7aa1a1313d55a77c.jpg" alt="ENHYPEN Debut"
+                    class="card-image">
+                <div class="card-content">
+                    <div class="username">
+                        @heeseung_vocal <span class="country">PHILIPPINES</span>
+                    </div>
+                    <div class="message">
+                        I’ll never forget the first time I saw Heeseung on stage, singing with that radiant smile. The
+                        way his voice carried through the arena gave me chills,
+                        and for a moment, it felt like the whole world paused just to watch him shine. That night, I
+                        believed in the magic of music all over again.<span class="heart">🎶</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Message 4 -->
+            <div class="memory-card">
+                <img src="https://i.pinimg.com/1200x/5e/2e/7d/5e2e7d59478e3e4973a88f43c67a08d8.jpg"
+                    alt="Heeseung Studio" class="card-image">
+                <div class="card-content">
+                    <div class="username">
+                        @heeseung_protector <span class="country">INDONESIA</span>
+                    </div>
+                    <div class="message">
+                        ............ <span class="heart">🎸</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Message 5 -->
+            <div class="memory-card">
+                <img src="https://i.pinimg.com/736x/16/22/da/1622da1f8e08caf0b09d124c21c83b88.jpg" alt="MANIFESTO Tour"
+                    class="card-image">
+                <div class="card-content">
+                    <div class="username">
+                        @evan_lee <span class="country">CHINA</span>
+                    </div>
+                    <div class="message">
+                        ............
+                        <span class="heart">🌸</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>"We are ENGENE, and we will always support Lee Heeseung"</p>
+        <p style="margin-top: 10px; font-size: 14px;">This memory lane is filled with love from ENGENEs worldwide</p>
+    </div>
+
+    <script>
+        // Animation for cards when they come into view
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Apply initial styles and observe each card
+        document.querySelectorAll('.memory-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+
+</html>
