@@ -9,8 +9,8 @@ A heartfelt digital gallery of messages from ENGENEs around the world dedicated 
 - Easy to update — just add more message cards in HTML.
 
 ## Demo
-You can view the live site here:  
-[https://mini-27.github.io/heeseung-memory-lane/](https://mini-27.github.io/heeseung-memory-lane/)
+You can view the live site here:
+[](https://github.com/mini-27/heeseungs_memory_lane.git)
 
 ## Project Structure
 heeseung-memory-lane/
