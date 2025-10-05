@@ -10,7 +10,7 @@ A heartfelt digital gallery of messages from ENGENEs around the world dedicated 
 
 ## Demo
 You can view the live site here:
-[heeseungs_memory_lane](https://mini-27.github.io/heeseung_memory_lane/)
+[heeseungs_memory_lane](https://mini-27.github.io/heeseungs_memory_lane/)
 
 ## Project Structure
 heeseung-memory-lane/
